@@ -1,0 +1,21 @@
+<p>
+	<a href="#/">Search</a>
+	<a href="#/gallery">Gallery</a>
+</p>
+Search: <input ng-model="query">
+Sort by:
+<select ng-model="orderProp">
+	<option value="rank">Rank (1-250)</option>
+	<option value="-rank">Rank (250-1)</option>
+	<option value="title">Alphabetical</option>
+	<option value="-title">Alphabetical (reverse)</option>
+</select>
+
+<ul class="movies">
+	<li ng-repeat="movie in movies | filter:query | orderBy:orderProp" class="movie-listing">
+		<h1>{{movie.title}}</h1>
+		<a href="#/movies/{{movie.imdbID}}">
+		<img ng-src="./data/images/{{movie.imdbID}}.jpg"></img>
+		<h2>{{movie.rank}}. {{movie.plot}}</h2>
+	</li>
+</ul>

@@ -1,0 +1,80 @@
+@import "compass";
+@import "compass/reset";
+
+@import "variables";
+@import "mixins";
+@import "base";
+
+
+h4 {
+	text-align: center;
+}
+.center {
+	text-align: center;
+}
+
+.top-bar{
+	transition: all 0.5s ease 0.1s;
+}
+
+.sectionOne {
+	background-color: lightgrey;
+	font-family: Century Gothic, sans-serif;
+}
+
+.sectionTwo {
+	background-color: #222;
+	font-family: Century Gothic, sans-serif;
+}
+
+
+.sectionThree {
+	background-color: teal;
+	font-family: Century Gothic, sans-serif;
+}
+
+
+.pictureOfZed{
+	background-image: url("http://www.wallpaperup.com/uploads/wallpapers/2013/11/14/175001/c2e676141e59f9e537eb5a32b272b4b9.jpg");
+	height: 100vh;
+	min-width: 1200px;
+}
+
+.fix {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+	z-index: 100;
+}
+
+.imageFormatting {
+	margin: 5px;
+	padding: 5px;
+	border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, white, rgba(0, 0, 0, 0)) 1 100%;
+	height: auto;
+	text-align: center;
+}
+
+.white {
+	color: white;
+}
+
+.vid {
+	width: 100vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.padding-on-my-header {
+    padding: 17px 0.9375rem 62px 0.9375rem;
+    ul.title-area img {
+        margin: -5px 0 0 0;
+    }
+}
+
+#logo {
+	font-size: 30px;
+}

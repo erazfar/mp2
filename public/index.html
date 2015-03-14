@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Battle Of the Magus Ascendent</title>
+	<script src="./lib/angular/angular.min.js"></script>
+	<script src="./js/controllers.js"></script>
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./foundation/css/foundation.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="http://www.justinaguilar.com/animations/css/animations.css">
+
+</head>
+
+<body>
+
+	<div class="contain-to-grid sticky">
+		<nav class="top-bar ic" data-topbar role="navigation">
+			<ul class="title-area">
+				<li class="name">
+					<h4 id = "logo" class="white">The Magus Ascendent</h4>
+				</li>
+	
+				<li class="toggle-topbar menu-icon"><a><span>Menu</span></a></li>
+			</ul>
+
+			<section class="top-bar-section">
+				<ul class="right">
+					<li class="active"><a id = "activeSlot">Home</a></li>
+					<li class="has-dropdown">
+						<a class="white" id = "menu">Menu</a>
+						<ul class="dropdown">
+							<div id = "homeButton"><li id = "homeId" class="active"><a class="white">Home</a></li></div>
+							<div id = "descriptionButton"><li id ="descriptionId"><a class ="white">Description</a></li></div>
+							<div id = "learnButton"><li id="learnId"><a class = "white">Learn</a></li></div>
+							<div id = "contactButton"><li id = "contactId"><a class = "white">Contact</a></li></div>
+						</ul>
+					</li>
+				</ul>
+			</section>
+		</nav>
+	</div>
+
+	<div id = "top">
+		<ul class="example-orbit" data-orbit>
+			<li>
+				<img src="http://team-prime.eu/images/slider/slider_2.png" class="vid" alt="slide 1" />
+			</li>
+			<li class="active">
+				<img src="http://s3-ap-southeast-2.amazonaws.com/ag.images/Thumbnails/Nov14/femhero.jpg" class="vid" alt="slide 2" />
+			</li>
+			<li>
+				<img src="https://codeswholesale.com/wp-content/uploads/2014/08/doablo3ros-banner.jpg" class="vid" alt="slide 3" />
+			</li>
+		</ul>
+	</div>
+
+	<div class = "sectionOne center" id ="sectionOne">
+		<h1> Battle for the Magus Ascendent was a full scale browser MOBA style game that I built in CS 242. The game is similar to other MOBA style games in every aspect except that it runs exclusively in the browser. </h1>
+
+		<a href="#" data-reveal-id="moreInfo" class="radius button">More Info</a>
+
+		<div id="moreInfo" class="reveal-modal" data-reveal>
+		  <h2>The Battle For Ascension</h2>
+		  <p class="lead">By: Thee ZerO</p>
+		  <p>Battle for the Magus Ascendent was a full scale browser MOBA style game that I built in CS 242. The game is similar to other MOBA style games in every aspect except that it runs exclusively in the browser.</p>
+		  <a class="close-reveal-modal">&#215;</a>
+		</div>
+	</div>
+
+	<div class = "fix pictureOfZed"></div>
+
+
+	<div class="sectionTwo" id="sectionTwo">
+		<div class="row">
+			<div class = "center"><h1 class = "white">Learn</h1></div>
+			<div class="small-3 columns center">
+					<p>
+						<i class="fa fa-fire fa-5x white"></i>
+					</p> 
+					<h2 class = "white">Spells</h2>
+					<img class ="imageFormatting" src="http://www.sai.msu.su/~megera/gimp/cooltype/hint40/1.jpg">
+					<img class ="imageFormatting" src="http://lightoftheworldnewspaper.com/wp-content/uploads/2012/08/Fire-200x200.jpg">
+					<img class ="imageFormatting" src="http://www.sorucevapbank.com/wp-content/uploads/2010/10/pentagram-200x200.png">
+			</div>
+			<div class="small-6 columns center">
+					<p>
+						<i class="fa fa-users fa-5x white"></i>
+					</p> 
+					<h2 class = "white">Teamwork</h2>
+					<img class ="imageFormatting" src="http://elo24.eu/img/katarina.jpg">
+					<img class ="imageFormatting" src="http://techietricks.net/wp-content/uploads/2014/04/league-of-legends-map-hack-300x300.jpg">
+			</div>
+			<div class="small-3 columns center">
+					<p>
+						<i class="fa fa-gavel fa-5x white"></i>
+					</p>
+					<h2 class = "white">Domination</h2>
+					<img class ="imageFormatting" src="http://static9.cdn.ubi.com/en-US/images/2013.09.10%20-%20News%20-%20200x200%20-%20Body%20-%20VoidKeepertcm19112545.png">
+					<img class ="imageFormatting" src="http://www.veterangamers.co.uk/blog/wp-content/uploads/2011/06/GodOfWarGhostOfSparta-200x200.jpg">
+					<img class ="imageFormatting" src="http://smashingcloud.com/wp-content/uploads/2013/06/Wonderful-Death-Colossus-200x200.jpg">
+			</div>
+		</div>
+	</div>
+
+	<div class = "sectionThree" id = "sectionThree">
+		<video class="vid fix" autoplay loop muted>
+		  <source src="vi.mp4" type="video/mp4">
+		</video>
+			<div class = "center"><p>	
+				<i class="fa fa-facebook fa-5x white"><SP></i>
+				<i class="fa fa-google-plus fa-5x white"><SP></i>
+				<i class="fa fa-linkedin fa-5x white"><SP></i>
+				<i class="fa fa-reddit fa-5x white"><SP></i></p>
+				<h1 class="white pulse">Join us on social media! </h1>
+			</div>
+	</div>
+
+
+	<script src="./lib/jquery-2.1.3.min/index.js"></script>
+	<script src="./foundation/js/foundation.min.js"></script>
+	<script src="./foundation/js/foundation/foundation.orbit.js"></script>
+	<script src="./js/script.js"></script>
+	<script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>

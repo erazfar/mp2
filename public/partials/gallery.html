@@ -1,0 +1,35 @@
+<p>
+	<a href="#/">Search</a>
+	<a href="#/gallery.html">Gallery</a>
+</p>
+<div>
+<button ng-click="musical = (musical == 'musical') ? '' : 'musical'" ng-init="musical = ''">Musical</button>
+<button ng-click="adventure = (adventure == 'adventure') ? '' : 'adventure'" ng-init="adventure = ''">Adventure</button>
+<button ng-click="action = (action == 'action') ? '' : 'action'" ng-init="action = ''">Action</button>
+<button ng-click="crime = (crime == 'crime') ? '' : 'crime'" ng-init="crime = ''">Crime</button>
+<button ng-click="comedy = (comedy == 'comedy') ? '' : 'comedy'" ng-init="comedy = ''">Comedy</button>
+<button ng-click="drama = (drama == 'drama') ? '' : 'drama'" ng-init="drama = ''">Drama</button>
+<button ng-click="mystery = (mystery == 'mystery') ? '' : 'mystery'" ng-init="mystery = ''">Mystery</button>
+<button ng-click="romance = (romance == 'romance') ? '' : 'romance'" ng-init="romance = ''">Romance</button>
+<button ng-click="scifi = (scifi == 'Sci-Fi') ? '' : 'Sci-Fi'" ng-init="scifi = ''">Sci-Fi</button>
+<button ng-click="thriller = (thriller == 'thriller') ? '' : 'thriller'" ng-init="thriller = ''">Thriller</button>
+<button ng-click="western = (western == 'western') ? '' : 'western'" ng-init="western = ''">Western</button>
+</div>
+<ul class="movies">
+	<div ng-repeat="movie in movies | 
+	filter:musical | 
+	filter:romance | 
+	filter:adventure | 
+	filter:action |
+	filter:crime |
+	filter:comedy |
+	filter:drama |
+	filter:mystery |
+	filter:romance |
+	filter:scifi |
+	filter:thriller |
+	filter:western"
+	class="movie-listing">
+		<img ng-src="./data/images/{{movie.imdbID}}.jpg"></img>
+	</div>
+</ul>
