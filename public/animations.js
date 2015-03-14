@@ -1,0 +1,1 @@
+var movieAnims = angular.module('movieAnimations', ['ngAnimate']);
